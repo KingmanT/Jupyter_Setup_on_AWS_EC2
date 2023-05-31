@@ -44,7 +44,7 @@ sleep 2
 echo " "
 echo "Preparing to install Python package installer.."
 echo " "
-Sleep 2
+sleep 2
 
 apt install -y python3-pip
 sleep 2
