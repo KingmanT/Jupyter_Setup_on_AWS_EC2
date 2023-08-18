@@ -14,4 +14,4 @@ password: abcd1234
 cert: false''' > ./.config/code-server/config.yaml
 
 sudo systemctl stop code-server@USER
-sudo systemctl start code-server@USER
+sudo systemctl enable --now code-server@$USER
