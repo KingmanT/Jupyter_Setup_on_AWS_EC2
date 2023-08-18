@@ -13,7 +13,7 @@ auth: password
 password: abcd1234                
 cert: false''' > ./.config/code-server/config.yaml
 
-sudo systemctl stop code-server@USER
+sudo systemctl stop code-server@$USER
 
 sleep 3
 
