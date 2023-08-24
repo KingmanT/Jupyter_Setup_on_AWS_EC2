@@ -71,23 +71,8 @@ echo "----------"
 echo "Jupyter Lab installed"
 echo "----------"
 echo " "
-#prompt for starting jupyter lab
-echo "Would you like to start Jupyter Lab now? (yes/no)"
-echo " "
-read ans2
-echo " "
-ans2c=`echo $ans2 | cut -c 1 | tr [:upper:] [:lower:]`
-
-if [[ $ans2c = "y" ]]; then
-
-read -p "Starting Jupyter Lab.  To access notebook, open a new browser, enter the public IP address followed by port 8888.  Press enter to continue" 
-echo "----------"
-jupyter lab --no-browser --ip=0.0.0.0 --allow-root
-exit 0
-
-else
-
-echo "Jupyter Lab not started.  To start, enter the command: 'jupyter lab --no-browser --ip=0.0.0.0'"
+echo "To start Jupyter Lab enter the command: 'jupyter lab --no-browser --ip=0.0.0.0'"
+echo "To access notebook: open a new browser, enter the public IP address of your EC2, followed by port 8888."
 echo "Exiting"
 echo "----------"
 
