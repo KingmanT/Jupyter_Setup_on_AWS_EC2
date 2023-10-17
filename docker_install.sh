@@ -22,6 +22,6 @@ sudo usermod -aG docker $USER
 
 # Apply changes to group
 newgrp docker
-
+sleep 3
 # Verify that Docker was installed and running properly
 docker run hello-world
