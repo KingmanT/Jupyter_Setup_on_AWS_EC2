@@ -20,8 +20,6 @@ sudo apt-get -y install docker-ce docker-ce-cli containerd.io docker-buildx-plug
 # Add your user to the 'docker' group
 sudo usermod -aG docker $USER
 
-# Apply changes to group
+# Apply changes to group.  This opens a new shell with the changes applied.  
+# *if the user returns to the previous shell before rebooting instance, docker commands will not work without using sudo*
 newgrp docker
-sleep 3
-# Verify that Docker was installed and running properly
-docker run hello-world
